@@ -7,10 +7,12 @@ Cette application est  dédiée aux opérations sur le terrain simplifient les p
 - Gestion des terrains par villes et par zones
 - Gestion de réservation
 
-## Model-View-Controller
-- Un modèle (Model) : contient les données à afficher par exemple les terrains (getter/setters)
-- Une vue (View) : contient la présentation de l'interface graphique.
-- Un contrôleur (Controller) : contient la logique concernant les actions effectuées par l'utilisateur.
+## Architecture du projet :
+L'application est divisée en deux parties : le frontend, codé en Angular, et le backend, codé en Spring Boot. Le backend utilise également une base de données MySQL pour stocker les données de l'application.
+
+Le frontend et le backend communiquent via des API REST. Le frontend envoie des requêtes HTTP au backend, qui réalise les opérations souhaitées sur la base de données et renvoie les résultats au frontend sous forme de JSON.
+
+![App Screenshot](https://github.com/hamzakarouane/hh/blob/master/screenshots/angular-spring-boot-mysql.png?raw=true)
 
 # Mise en place du projet
 
